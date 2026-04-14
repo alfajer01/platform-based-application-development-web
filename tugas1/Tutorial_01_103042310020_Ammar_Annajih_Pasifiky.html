@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tutorial 01 - HTML Dasar</title>
+</head>
+
+<body>
+    <h1>Tugas Praktikum HTML Dasar</h1>
+    <h2>Identitas Mahasiswa</h2>
+    <p>
+        Nama: <b>Ammar Annajih Pasifiky</b><br />
+        NIM: <b>103042310020</b>
+    </p>
+
+    <hr />
+
+    <h2>Pengenalan Singkat</h2>
+    <p>
+        Halaman ini dibuat untuk memprktikan <b>tag-tag HTML dasar</b> berdasarkan
+        materi praktikum week 1. Di halaman ini saya mencoba beberapa elemen seperti
+        heading, paragraf, list, link, image, table, dan form.
+    </p>
+    <p>
+        HTML dipkai untuk menyusun struktur halaman web dengan teks <b>tebal</b>,
+        <i>miring</i>, dan <u>garis bawah</u>. Test Test da adsad sadsad.
+    </p>
+
+    <hr />
+
+    <h2>Contoh List</h2>
+    <h3>Unordered List</h3>
+    <ul>
+        <li>List 1</li>
+        <li>Liost 2</li>
+        <li>a das dsad</li>
+        <li>a das sd sadsa d </li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>List 1</li>
+        <li>Liost 2</li>
+        <li>a das dsad</li>
+        <li>a das sd sadsa d </li>
+    </ol>
+
+    <h3>Nested List</h3>
+    <ul>
+        <li>
+            Materi HTML Dasar
+            <ul>
+                <li>List 1</li>
+                <li>Liost 2</li>
+            </ul>
+        </li>
+        <li>
+            List 2
+            <ol>
+                <li>a das dsad</li>
+                <li>a das sd sadsa d </li>
+            </ol>
+        </li>
+    </ul>
+
+    <hr />
+
+    <h2>Contoh Link dan Gambar</h2>
+    <p>
+        Test link telkom 123:
+        <a href="https://telkomuniversity.ac.id">Telkom University</a>
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Logo_Telkom_University_potrait.png/250px-Logo_Telkom_University_potrait.png"
+        alt="Logo Telkom University" />
+    <hr />
+
+    <h2>Contoh Tag Teks Lain</h2>
+    <p>
+        Di HTML juga ada tag lain seperti <strong>strong</strong>, <em>em</em>,
+        <mark>mark</mark>, dan <code>code</code>.
+    </p>
+    <p>
+        Contoh code HTML sederhana adalah <code>&lt;p&gt;Hello Worlddddd!&lt;/p&gt;</code>.
+    </p>
+
+    <hr />
+
+    <h2>Contoh Tabel Data Mahasiswa</h2>
+    <table border="1" width="60%">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Kelas</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ammar Annajih Pasifiky</td>
+            <td>103042310020</td>
+            <td>IF-47-02</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Contoh Mahasiswa</td>
+            <td>103042310021</td>
+            <td>IF-47-03</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total Mahasiswa</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <h2>Contoh Tabel Exercise Colspan dan Rowspan</h2>
+    <table border="1" width="70%">
+        <tr>
+            <th rowspan="2">Nama Lengkap</th>
+            <th colspan="2">Gelar Pendidikan</th>
+            <th rowspan="2">Age</th>
+        </tr>
+        <tr>
+            <th>Sarjana</th>
+            <th>Magister</th>
+        </tr>
+        <tr>
+            <td>Budi</td>
+            <td>S.Kom</td>
+            <td>M.Sc</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Andi</td>
+            <td>S.SiKom</td>
+            <td>M.T</td>
+            <td>52</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <h2>Contoh Form Biodata</h2>
+    <form method="post" action="kirim.php">
+        Nama Lengkap:<br />
+        <input type="text" name="nama" /><br /><br />
+
+        Password:<br />
+        <input type="password" name="password" /><br /><br />
+
+        Jenis Kelamin:<br />
+        <input type="radio" name="jenis_kelamin" value="Laki-laki" /> Laki-laki<br />
+        <input type="radio" name="jenis_kelamin" value="Perempuan" /> Perempuan<br /><br />
+
+        Hobi:<br />
+        <input type="checkbox" name="hobi[]" value="Membaca" /> Membaca<br />
+        <input type="checkbox" name="hobi[]" value="Coding" /> Coding<br />
+        <input type="checkbox" name="hobi[]" value="Olahraga" /> Olahraga<br /><br />
+
+        Program Studi:<br />
+        <select name="program_studi">
+            <option value="S1IF">S1 Informatika</option>
+            <option value="S1SI">S1 Sistem Informasi</option>
+            <option value="S1DKV">S1 Desain Komunikasi Visual</option>
+        </select><br /><br />
+
+        Email:<br />
+        <input type="email" name="email" /><br /><br />
+
+        Umur:<br />
+        <input type="number" name="umur" min="17" max="60" /><br /><br />
+
+        Tanggal Lahir:<br />
+        <input type="date" name="tanggal_lahir" /><br /><br />
+
+        Warna Favorit:<br />
+        <input type="text" name="warna_favorit" list="warna" /><br />
+        <datalist id="warna">
+            <option value="Merah">
+            <option value="Biru">
+            <option value="Hitam">
+            <option value="Putih">
+        </datalist><br />
+
+        Upload File:<br />
+        <input type="file" name="berkas" /><br /><br />
+
+        Pesan:<br />
+        <textarea name="pesan" rows="5" cols="40">Tulis pesan di sini ya... </textarea><br /><br />
+
+        <input type="submit" value="Kirim" />
+        <input type="reset" value="Reset" />
+        <button type="button">Tombol Biasa</button>
+    </form>
+</body>
+
+</html>
