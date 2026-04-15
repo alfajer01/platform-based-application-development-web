@@ -16,8 +16,11 @@ Cara menjalankan:
 
 Jika menggunakan Herd:
 1. buka terminal dan masuk ke folder project ini
-2. jalankan `herd link tutorial05-ammar` dari dalam folder project jika belum pernah link
-3. buka:
+2. jalankan `composer install` jika folder `vendor` belum ada
+3. jalankan `copy .env.example .env` jika file `.env` belum ada
+4. jalankan `php artisan key:generate` jika application key belum dibuat
+5. jalankan `herd link tutorial05-ammar` dari dalam folder project jika belum pernah link
+6. buka:
    - `http://tutorial05-ammar.test/lat1`
    - `http://tutorial05-ammar.test/lat1/m2`
 
